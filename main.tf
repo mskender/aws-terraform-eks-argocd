@@ -35,10 +35,3 @@ values = [
 
 }
 
-data "kubernetes_secret" "admin_pass" {
-  metadata {
-    name = "argocd-initial-admin-secret"
-    namespace = var.namespace
-    }
-}
-
